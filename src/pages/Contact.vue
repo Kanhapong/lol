@@ -19,7 +19,7 @@
                 <i class="fas fa-map"></i>
                 <div class="info">
                     <h3>address :</h3>
-                    <p>Notaburi, Thailand 11110</p>
+                    <p>{{address}}</p>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                 <i class="fas fa-envelope"></i>
                 <div class="info">
                     <h3>email :</h3>
-                    <p>kanhapong01@gmail.com</p>
+                    <p>{{email}}</p>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
                 <i class="fas fa-phone"></i>
                 <div class="info">
                     <h3>number :</h3>
-                    <p>+66830832715</p>
+                    <p>{{number}}</p>
                 </div>
             </div>
 
@@ -78,6 +78,14 @@
 import Navbar from '../components/Navbar.vue'
 export default {
   components: { Navbar },
+  data() {
+        return {
+            address:"Notaburi, Thailand 11110",
+            email:"kanhapong01@gmail.com",
+            number:"+66830832715",
+
+        }
+    }
 
 }
 </script>

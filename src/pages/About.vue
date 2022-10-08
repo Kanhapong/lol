@@ -14,17 +14,17 @@
                 <div class="box-container">
 
                     <div class="box">
-                        <h3> <span>name : </span> Kanhapong Kanhakul </h3>
-                        <h3> <span>age : </span> 19 </h3>
-                        <h3> <span>email : </span> kanhapong01@gmail.com </h3>
-                        <h3> <span>address : </span> Nontaburi, Thailand 11110 </h3>
+                        <h3> <span>name : </span>{{name}}</h3>
+                        <h3> <span>age : </span>{{age}}</h3>
+                        <h3> <span>email : </span>{{email}}</h3>
+                        <h3> <span>address : </span>{{address}}</h3>
                     </div>
 
                     <div class="box">
-                        <h3> <span>freelance : </span> available </h3>
-                        <h3> <span>skill : </span>  Video Game. </h3>
-                        <h3> <span>experience : </span> 4 years </h3>
-                        <h3> <span>language : </span> thai </h3>
+                        <h3> <span>freelance : </span>{{freelance}}</h3>
+                        <h3> <span>skill : </span>{{skill}}</h3>
+                        <h3> <span>experience : </span>{{experience}}</h3>
+                        <h3> <span>language : </span>{{language}}</h3>
                     </div>
 
                 </div>
@@ -129,6 +129,14 @@ export default {
   components: { Navbar },
     data() {
         return {
+            name: "Kanhapong Kanhakul",
+            age: "19",
+            email:"kanhapong01@gmail.com",
+            address: "Nontaburi, Thailand 11110",
+            freelance:"available",
+            skill: "Video Game.",
+            experience:"4 years",
+            language:"thai",
             experiences: [{
                 years: "2017 - 2018",
                 company: "INTER EXPRESS LOGISTICS PRIVATE LIMITED",
@@ -153,8 +161,9 @@ export default {
                 years: "2020 - 2021",
                 company: "uTech Solutions",
                 jobs: "Assist the system analyst in conduct analysis, architecture, design database model for the new application.",
-            }]
-            
+            }],
+
+
         }
     }
 
